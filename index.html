@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styes.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo-trans.png" alt="Logo" class="logo"> ZScienovation
+                </a>
+    
+                <!-- Contact Button -->
+                <button class="btn btn-contact d-lg-none d-inline-block" type="button">Contact</button>
+    
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+    
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="btn btn-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home">
+        <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/home-bg.jpg" alt="Slide 1">
+                    <div class="carousel-caption">
+                        <h1>Welcome to ZScienovation</h1>
+                        <p>Your journey to excellence starts here.</p>
+                        <a href="#contact" class="btn-slider">Contact Us</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/home-bg2.jpg" alt="Slide 2">
+                    <div class="carousel-caption">
+                        <h1>Discover Our Services</h1>
+                        <p>We provide top-notch solutions for your needs.</p>
+                        <a href="#services" class="btn-slider">Explore Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/home3.jpg" alt="Slide 3">
+                    <div class="carousel-caption">
+                        <h1>Join Our Projects</h1>
+                        <p>Be part of something extraordinary.</p>
+                        <a href="#projects" class="btn-slider">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+<!-- About Section -->
+
+<section id="about" style="padding: 80px 20px; background: linear-gradient(135deg, #141E30, #243B55); color: #fff;">
+    <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
+        <!-- Section Heading -->
+        <div style="margin-bottom: 60px;">
+            <h2 style="font-size: 3rem; font-weight: bold; color: #FFD700; text-transform: uppercase; letter-spacing: 3px;">
+                About Us
+            </h2>
+            <p style="font-size: 1.3rem; color: #ECECEC; max-width: 800px; margin: 0 auto;">
+                We strive to innovate and lead, turning visions into realities and goals into impactful achievements.
+            </p>
+        </div>
+
+        <!-- Mission Section -->
+        <div style="margin-bottom: 40px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);">
+            <h3 style="font-size: 2rem; font-weight: bold; color: #FFD700; margin-bottom: 20px;">
+                Mission
+            </h3>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #E6E6E6;">
+                "To become the leading provider of comprehensive CRM solutions, helping businesses of all sizes optimize their customer interactions and achieve success."
+            </p>
+        </div>
+
+        <!-- Vision Section -->
+        <div style="margin-bottom: 40px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);">
+            <h3 style="font-size: 2rem; font-weight: bold; color: #FFD700; margin-bottom: 20px;">
+                Vision
+            </h3>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #E6E6E6;">
+                "To empower businesses of all sizes to cultivate enduring customer relationships through an intuitive, data-driven platform that fosters growth and innovation."
+            </p>
+        </div>
+
+        <!-- Objectives Section -->
+        <div style="margin-bottom: 40px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); text-align: left;">
+            <h3 style="font-size: 2rem; font-weight: bold; color: #FFD700; margin-bottom: 20px; text-align: center;">
+                Objectives
+            </h3>
+            <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.2rem; line-height: 1.8; color: #E6E6E6;">
+                <li>Attract and Retain Top Talent by crafting compelling job descriptions and streamlining the recruitment process.</li>
+                <li>Build a Culture of Innovation by fostering collaboration, knowledge-sharing, and professional development.</li>
+                <li>Develop a Technically Skilled Workforce with training in new technologies and soft skills.</li>
+                <li>Ensure Compliance with labor laws and workplace regulations.</li>
+                <li>Promote Diversity and Inclusion by developing equal opportunity initiatives.</li>
+                <li>Enhance Work-Life Balance through flexible arrangements and wellness programs.</li>
+            </ul>
+        </div>
+
+        <!-- Core Values Section -->
+        <div style="padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);">
+            <h3 style="font-size: 2rem; font-weight: bold; color: #FFD700; margin-bottom: 20px;">
+                Core Values
+            </h3>
+            <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; line-height: 1.8; color: #E6E6E6;">
+                <li><b>Customer Focus:</b> Prioritizing the needs of customers and exceeding expectations.</li>
+                <li><b>Innovation:</b> Encouraging creativity and continuous improvement.</li>
+                <li><b>Integrity:</b> Demonstrating honesty and transparency in all actions.</li>
+                <li><b>Teamwork:</b> Promoting open communication and cooperation.</li>
+                <li><b>Accountability:</b> Taking responsibility and ensuring achievement of goals.</li>
+                <li><b>Security:</b> Committing to data security and privacy.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+
+<section id="services" style="padding-top:1.5rem; background: #f8f9fa;">
+    <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
+        <!-- Section Heading -->
+        <div style="margin-bottom: 50px;">
+            <h2 style="font-size: 2.5rem; font-weight: bold; color: #4e54c8; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px;">
+                Our Services
+            </h2>
+            <p style="font-size: 1.2rem; color: #333; max-width: 800px; margin: 0 auto;">
+                At <b>ZScienovation</b>, we specialize in providing expert Zoho solutions to optimize your business workflows, foster collaboration, and deliver valuable insights for growth.
+            </p>
+        </div>
+
+        <!-- Services Cards -->
+        <section id="services" style="padding: 20px 20px; background: #f7f9fc;">
+            <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
+                <!-- Section Heading -->
+                <div style="margin-bottom: 50px;">
+                    <h2 style="font-size: 2.8rem; font-weight: bold; color: #4e54c8; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1.5px;">
+                        Explore Our Services
+                    </h2>
+                    <p style="font-size: 1.2rem; color: #555; max-width: 850px; margin: 0 auto; line-height: 1.8;">
+                        At <b>ZScienovation</b>, we deliver tailored Zoho solutions that empower your business, streamline processes, and boost productivity. Explore our diverse range of services designed to help you succeed.
+                    </p>
+                </div>
+        
+                <!-- Services Cards -->
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">🔧</div>
+                        <h3>Zoho Implementation & Migration</h3>
+                        <p>Seamlessly migrate and implement Zoho tools for smooth business operations and workflow optimization.</p>
+                    </div>
+        
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">💻</div>
+                        <h3>Zoho Customization & Development</h3>
+                        <p>Tailor Zoho applications to suit your unique business needs with expert customizations and development.</p>
+                    </div>
+        
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">🔗</div>
+                        <h3>Zoho Integration Services</h3>
+                        <p>Integrate Zoho apps with third-party tools to build a connected and efficient digital ecosystem.</p>
+                    </div>
+        
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">📚</div>
+                        <h3>Ongoing Support & Training</h3>
+                        <p>Get 24/7 support and personalized training to maximize your Zoho investments and capabilities.</p>
+                    </div>
+        
+                    <!-- Card 5 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">📈</div>
+                        <h3>Zoho Analytics & Reporting</h3>
+                        <p>Leverage powerful analytics and reports to gain insights and make data-driven decisions for your business.</p>
+                    </div>
+        
+                    <!-- Card 6 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">⚙️</div>
+                        <h3>Zoho Workflow Automation</h3>
+                        <p>Automate tedious workflows with Zoho tools and focus on growing your business effortlessly.</p>
+                    </div>
+        
+                    <!-- Card 7 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">🌐</div>
+                        <h3>Zoho Web Solutions</h3>
+                        <p>Build customized, responsive, and visually stunning websites powered by Zoho technologies.</p>
+                    </div>
+        
+                    <!-- Card 8 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">🛠️</div>
+                        <h3>Zoho Maintenance Services</h3>
+                        <p>Ensure the seamless performance of your Zoho apps with our regular maintenance and updates.</p>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="service-card">
+                        <div class="icon" style="font-size: 40px; color: #4e54c8; margin-bottom: 20px;">📊</div>
+                        <h3>Zoho CRM Solutions</h3>
+                        <p>Enhance customer relationships and manage your sales pipeline efficiently with Zoho CRM's tailored solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+        <!-----------Projects section-------------->
+
+        <section id="projects" class="adn-agile-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2>Our Collaboration with <span class="highlight">ADN Agile</span></h2>
+                    <p>Working together to deliver Zoho solutions such as CRM, Integration, and Custom Development for efficient business processes.</p>
+                </div>
+        
+                <!-- ADN Agile Details -->
+                <div class="adn-details">
+                    <!-- Logo Placeholder -->
+                    <div class="adn-logo">
+                        <div class="logo-placeholder">
+                            <img src="./assets/img/ADN-agile.jpg" alt="ADN " />
+                        </div>
+                    </div>
+        
+                    <!-- Project Content -->
+                    <div class="adn-content">
+                        <h3>Project Highlights</h3>
+                        <p>
+                            Partnering with <b>ADN Agile</b>, we have implemented Zoho solutions to enhance business operations:
+                        </p>
+                        <div class="project-details">
+                            <div class="detail">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Zoho CRM Implementation</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-link"></i>
+                                <span>Zoho Integration with Third-Party Tools</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-cogs"></i>
+                                <span>Custom Workflow Automation</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-tools"></i>
+                                <span>Zoho Custom Development</span>
+                            </div>
+                        </div>
+                        <p>We look forward to future collaborations that bring value and innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-----------Event Gallery section-------------->
+        <section class="event-gallery py-5" id="events">
+            <div class="container text-center">
+              <h1 class="gallery-heading">Event Gallery</h1>
+              <h4 class="gallery-subheading">Annual Retreat visit in Jun-24 to Kashmir and Murree resorts.</h4>
+          
+              <!-- First Row -->
+              <div class="row g-4 mt-4">
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img1R1.jpg" class="img-fluid" alt="Event Image 1">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img2R1.jpg" class="img-fluid" alt="Event Image 2">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img3R1.jpg" class="img-fluid" alt="Event Image 3">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img4R1.jpg" class="img-fluid" alt="Event Image 4">
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Second Row -->
+              <h4 class="gallery-subheading mt-5">Annual Dinner May 2024 Shah Jahan Grill Multan.</h4>
+              <div class="row g-4 mt-4">
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img1R2.jpg" class="img-fluid" alt="Event Image 5">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img2R2.jpg" class="img-fluid" alt="Event Image 6">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img3R2.jpg" class="img-fluid" alt="Event Image 7">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="./assets/img/img4R2.jpg" class="img-fluid" alt="Event Image 8">
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Third Row -->
+              <h4 class="gallery-subheading mt-5">Even more unforgettable memories</h4>
+              <div class="row g-4 mt-4">
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Event Image 9">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Event Image 10">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Event Image 11">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="gallery-image">
+                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Event Image 12">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        
+        <!-----------Contact section-------------->
+
+      <section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We’re here to help! Feel free to reach out for any inquiries or collaborations.</p>
+        </div>
+        <div class="contact-content">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 123 456 7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@zscienovation.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Innovation Avenue, Suite 500, Silicon Valley</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Zscienovation. All Rights Reserved.</p>
+            <p>Email: contact@zscienovation.com | Phone: +1-234-567-890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-upwork"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarNav");
+
+    toggler.addEventListener("click", function () {
+        if (navbarCollapse.classList.contains("show")) {
+            toggler.innerHTML = "&#9776;"; // Hamburger icon
+        } else {
+            toggler.innerHTML = "&times;"; // Close icon
+        }
+        
+    });
+});
+// const toggleButton = document.querySelector('.toggle-btn');
+// const navMenu = document.querySelector('.nav-menu');
+
+// toggleButton.addEventListener('click', () => {
+//     navMenu.classList.toggle('active');
+//     toggleButton.classList.toggle('cross');
+// });
+
+
+</script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
