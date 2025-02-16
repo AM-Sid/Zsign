@@ -12,32 +12,31 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-      <!-- Navbar -->
-      <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo-trans.png" alt="Logo" class="logo">
-                    ZScienovation
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+   <!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo-trans.png" alt="Logo" class="logo">
+                ZScienovation
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-                        <li class="nav-item"><a class="btn btn-contact" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="btn btn-contact" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     
 
     
@@ -165,14 +164,14 @@
         <section id="services" style="padding: 20px 20px; background: #f7f9fc;">
             <div class="container" style="max-width: 1200px; margin: auto; text-align: center;">
                 <!-- Section Heading -->
-                <div style="margin-bottom: 50px;">
+                <!-- <div style="margin-bottom: 50px;">
                     <h2 style="font-size: 2.8rem; font-weight: bold; color: #4e54c8; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1.5px;">
                         Explore Our Services
                     </h2>
                     <p style="font-size: 1.2rem; color: #555; max-width: 850px; margin: 0 auto; line-height: 1.8;">
                         At <b>ZScienovation</b>, we deliver tailored Zoho solutions that empower your business, streamline processes, and boost productivity. Explore our diverse range of services designed to help you succeed.
                     </p>
-                </div>
+                </div> -->
         
                 <!-- Services Cards -->
                 <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
@@ -490,19 +489,20 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <a href="#contact" class="btn-join">Join Us</a>
             </div>
             
             <div class="footer-section">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/99901480/"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:zs.adnagile@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a href="https://www.youtube.com/@Zscienovation"><i class="fa-brands fa-youtube"></i></i></a>
-
+                    <a href="https://www.linkedin.com/company/99901480/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://wa.me/03017467851" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                     <a href="https://www.youtube.com/@Zscienovation" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:zs.adnagile@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
                 </div>
                 <div class="contact-info">
-                    <p>zs.adnagile@gmail.com</p>
-                    <p>03017467851</p>
+                    <p><i class="fa fa-envelope"></i> zs.adnagile@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> 03017467851</p>
                 </div>
             </div>
         </div>
@@ -516,48 +516,7 @@
 <a href="#" target="_blank" class="scroll-to-top" id="scrollToTop">
     <i class="fas fa-arrow-up"></i>
 </a>
-
-<!-------------JawaScript --------------->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-            // Initialize tooltips
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-
-            // Navbar toggle animation
-            document.querySelector('.navbar-toggler').addEventListener('click', function() {
-                this.classList.toggle('active');
-            });
-        });
-
-        // Scroll animations
-        window.addEventListener('scroll', function() {
-            document.querySelectorAll('.animate-on-scroll').forEach(element => {
-                const position = element.getBoundingClientRect();
-                if(position.top < window.innerHeight * 0.8) {
-                    element.classList.add('animated');
-                }
-            });
-        });
-        // Scroll to Top
-    const scrollToTopBtn = document.getElementById('scrollToTop');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            scrollToTopBtn.classList.add('show');
-        } else {
-            scrollToTopBtn.classList.remove('show');
-        }
-    });
-
-    scrollToTopBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    </script>
-
+<script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
