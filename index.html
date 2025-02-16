@@ -13,7 +13,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+      <!-- Navbar -->
+      <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -37,6 +38,8 @@
             </div>
         </nav>
     </header>
+    
+
     
     <!-- Home Section -->
     <section class="home">
@@ -113,7 +116,7 @@
         </div>
 
         <!-- Objectives Section -->
-        <div style="margin-bottom: 40px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); text-align: left;">
+        <!-- <div style="margin-bottom: 40px; padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); text-align: left;">
             <h3 style="font-size: 2rem; font-weight: bold; color: #FFD700; margin-bottom: 20px; text-align: center;">
                 Objectives
             </h3>
@@ -125,7 +128,7 @@
                 <li>Promote Diversity and Inclusion by developing equal opportunity initiatives.</li>
                 <li>Enhance Work-Life Balance through flexible arrangements and wellness programs.</li>
             </ul>
-        </div>
+        </div> -->
 
         <!-- Core Values Section -->
         <div style="padding: 30px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);">
@@ -416,9 +419,7 @@
                 </div>
             </div>
         </section>
-          
-
-        
+  
         <!-----------Contact section-------------->
 
       <section id="contact" class="contact-section">
@@ -432,15 +433,16 @@
             <div class="contact-info">
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
-                    <p>+1 123 456 7890</p>
+                    <p>03017467851</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
-                    <p>info@zscienovation.com</p>
+                    <p>zs.adnagile@gmail.com</p>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Innovation Avenue, Suite 500, Silicon Valley</p>
+                    <p>H. No.05, 1st Floor, Gulshan e Gulab Colony, 
+                    Near Chungi No. 1, Multan</p>
                 </div>
             </div>
 
@@ -493,14 +495,14 @@
             <div class="footer-section">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/company/99901480/"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:zs.adnagile@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.youtube.com/@Zscienovation"><i class="fa-brands fa-youtube"></i></i></a>
+
                 </div>
                 <div class="contact-info">
-                    <p>info@zscienovation.com</p>
-                    <p>+1 (555) 123-4567</p>
+                    <p>zs.adnagile@gmail.com</p>
+                    <p>03017467851</p>
                 </div>
             </div>
         </div>
@@ -509,6 +511,11 @@
             <p>&copy; 2024 ZScienovation. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+<a href="#" target="_blank" class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
 
 <!-------------JawaScript --------------->
 <script>
@@ -534,6 +541,21 @@
                 }
             });
         });
+        // Scroll to Top
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
